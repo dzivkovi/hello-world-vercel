@@ -88,7 +88,7 @@ This project uses Vercel for automated deployments:
 5. Vercel will automatically create a preview deployment for your PR:
     ![Vercel Preview Deployment](./assets/Preview-Deployment.jpg)
 6. After review and approval, merge the PR into `dev`:
-    ![Pull Request Merged](./assets/PR-Merged.jpg
+    ![Pull Request Merged](./assets/PR-Merged.jpg)
 7. Vercel will automatically deploy the changes to the development environment:
     ![Vercel Dev Deployment](./assets/Dev-Deployment.jpg)
 8. And you'll be able to see the changes in the development Domain [https://hello-world-vercel-dev.vercel.app](https://hello-world-vercel-dev.vercel.app)
