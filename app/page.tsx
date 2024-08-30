@@ -1,7 +1,6 @@
 import styles from './page.module.css';
 
-// This will be evaluated at build time
-const buildTime = new Date().toLocaleString('en-US', {
+const buildTime = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: '2-digit',
   day: '2-digit',
@@ -9,8 +8,8 @@ const buildTime = new Date().toLocaleString('en-US', {
   minute: '2-digit',
   second: '2-digit',
   hour12: false,
-  timeZone: 'America/New_York'  // This sets the timezone to EDT
-});
+  timeZone: 'America/New_York'
+}).format(new Date());
 
 export default function Page() {
   const environment = process.env.VERCEL_ENV || 'local';
